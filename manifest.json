@@ -1,0 +1,20 @@
+{
+  "name": "The Kim in the North!",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "Pledge allegiance to the rightful Kim in the North on every page in WWWesteros!",
+  "permissions": [
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "src/inject.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
